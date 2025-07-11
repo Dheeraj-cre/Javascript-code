@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odd or Even Checker</title>
+    <script>
+        function oddoreven() {
+            // Get values from input
+            let num = parseInt(prompt("Enter a first number"));
+
+            if (num % 2 === 0) {
+                alert("The Number is even : " + num);
+            } else {
+                alert("The number is odd : " + num);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <input type="button" value="Calculate Odd or Even" onclick="oddoreven()">
+    </form>
+
+</body>
+
+</html>

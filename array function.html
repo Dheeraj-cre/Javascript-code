@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Functions Demo</title>
+    <script>
+        let num = [14, 15, 78, 54, 65, 25, 45, 41, 27, 10];
+
+        // Display original array
+        document.write("Original Array: " + num + "<br><br>");
+
+        // pop(): Removes the last element
+        document.write("Removed with pop(): " + num.pop() + "<br>");
+
+        // push(): Adds a new element at the end
+        num.push(99);
+        document.write("After push(99): " + num + "<br>");
+
+        // shift(): Removes the first element
+        document.write("Removed with shift(): " + num.shift() + "<br>");
+
+        // unshift(): Adds element at the beginning
+        num.unshift(5);
+        document.write("After unshift(5): " + num + "<br>");
+
+        // length: Gets the number of elements
+        document.write("Array length: " + num.length + "<br>");
+
+        // indexOf(): Finds index of an element
+        document.write("Index of 45: " + num.indexOf(45) + "<br>");
+
+        // includes(): Checks if a value exists
+        document.write("Includes 99? " + num.includes(99) + "<br>");
+        // reverse(): Reverses the array
+        document.write("Reversed Array: " + num.reverse() + "<br>");
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Simple interest Calculate</title>
+    <script>
+        function simpleinterest() {
+            // Get values from input
+
+            let P = parseInt(prompt("Enter a Principal :"))
+            let R = parseInt(prompt("Enter a Rate :"))
+            let T = parseInt(prompt("Enter a Time :"))
+
+            let SI = (P * R * T) / 100;
+            alert("The Simple Interest is : " + SI)
+
+
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <input type="button" value=" Calculate Simple interest" onclick="simpleinterest()">
+    </form>
+
+</body>
+
+</html>

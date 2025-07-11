@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array greatest number</title>
+    <script>
+        // Declare an array of numbers
+        let numbers = [14, 15, 78, 80, 65, 25, 45, 41, 27, 10];
+
+        // Print the original array
+        document.write("Original Array: " + numbers + "<br><br>");
+
+        // Initialize a variable to hold the maximum number
+        let max = numbers[0];
+
+        // Loop through the array starting from index 1
+        for (let index = 1; index < numbers.length; index++) {
+            if (numbers[index] > max) {
+                max = numbers[index]; // Update max if current number is greater
+            }
+        }
+
+        // Print the greatest number
+        document.write("Greatest number in the array: " + max + "<br>");
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

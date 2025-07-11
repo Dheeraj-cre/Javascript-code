@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array calculate the avg</title>
+    <script>
+        // This array contains various numbers
+        let num = [14, 15, 78, 54, 65, 25, 45, 41, 27, 10, 30, 33, 50, 40, 22];
+        document.write(" Array: " + num + "<br>");
+        // Calculate the sum of the array elements
+        let sum = 0;
+        // Loop through each element in the array
+        for (let i = 0; i < num.length; i++) {
+            // Add each element divided by 15 to the average
+            sum += num[i];
+        }
+        // Calculate the average by dividing the sum by the number of elements
+        let avg = sum / num.length;
+        document.write("Sum of the array: " + avg);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
