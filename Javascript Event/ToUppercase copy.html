@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Copy Text in Uppercase</title>
+</head>
+
+<!-- JavaScript section to define the function -->
+<script>
+    // This function copies the text from input1 to input2 in uppercase
+    function copyToUpper() {
+        var input1 = document.getElementById("input1").value; // Get value from first text field
+        document.getElementById("input2").value = input1.toUpperCase(); // Convert to uppercase and set in second field
+    }
+</script>
+
+<body>
+
+    <h3>Type in the first box </h3>
+
+    <!-- First text input field where user types -->
+    <input type="text" id="input1" placeholder="Type here..." required>
+    <br><br>
+
+    <!-- Second text input field where uppercase text will be shown -->
+    <input type="text" id="input2" placeholder="Uppercase output...">
+    <br><br>
+
+    <!-- Button to trigger the uppercase copy function -->
+    <input type="button" value="Copy to Uppercase" onclick="copyToUpper()">
+
+</body>
+
+</html>

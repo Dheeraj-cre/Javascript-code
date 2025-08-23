@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>String example</title>
+    <script>
+        /*---- Function to convert data of textfield into uppercase ---*/
+        function convertToUpperCase() {
+            var msg = ""
+                /*-- finding data from textfield ----*/
+            var data = document.getElementById("userid").value
+                /*---- to convert it into uppercase ----*/
+            var strupper = data.toUpperCase()
+            msg = "<font color=Red>In Uppercasecase : " + strupper + "</font>"
+                /*-- displaying this msg into div ---*/
+            document.getElementById("message").innerHTML = msg
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <!-- Input field for user to type a sentence -->
+        Sentence : <input type="text" name="uname" id="userid" required>
+        <br>
+        <!-- Input field to display the uppercase conversion -->
+        <div id="message">
+        </div>
+        <br>
+        <!-- Button to trigger the conversion to uppercase -->
+        <input type="button" value="To Uppercase" onclick="convertToUpperCase()">
+    </form>
+</body>
+
+</html>

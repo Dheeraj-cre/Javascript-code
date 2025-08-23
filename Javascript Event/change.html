@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Marge the data</title>
+</head>
+
+<script>
+    function mergeText() {
+        const first = document.getElementById("text1").value;
+        const second = document.getElementById("text2").value;
+        const merged = first + " " + second;
+
+        document.getElementById("text3").value = merged;
+    }
+</script>
+
+<body>
+
+    <h3>Type in the first box</h3>
+
+    <!-- First text input field where user types -->
+
+    First Text: <input type="text" id="text1" placeholder="Type here">
+    <br><br>
+
+    <!-- Second text input field where copied text will be shown -->
+    Second Text: <input type="text" id="text2" placeholder="Same data" onchange="mergeText()">
+    <br><br>
+    <!--Third text input field where change text will be shown -->
+    Third Text: <input type="text" id="text3" placeholder="Type here">
+    <br><br>
+
+
+</body>
+
+</html>

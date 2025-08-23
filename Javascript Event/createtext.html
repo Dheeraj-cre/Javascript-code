@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Text </title>
+    <script>
+        // create a funtion to display text
+        function displayText() {
+            //  the value entered in the input field with id 'inputText'
+            const text = document.getElementById("inputText").value;
+            // Set the text inside the div with id 'output' to the value from the input field
+            document.getElementById("output").innerText = text;
+        }
+    </script>
+</head>
+
+<body>
+    <!-- text input field where user types-->
+    <label>Enter text:</label>
+    <input type="text" id="inputText" onchange="displayText()" /><br><br>
+    <div id="output" style="color: red; font-weight: bold;"></div>
+
+</body>
+
+</html>

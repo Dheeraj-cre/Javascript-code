@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Textfield One to Another</title>
+</head>
+
+<script>
+    // This function copies the text from input1 to input2
+    function copyText() {
+        var input1 = document.getElementById("input1").value; // Get value from first text field
+        document.getElementById("input2").value = input1; // Set that value in second text field
+    }
+</script>
+
+<body>
+
+    <h3>Type in the first box</h3>
+
+    <!-- First text input field where user types -->
+    <input type="text" id="input1" placeholder="Type here" onkeyup="copyText()" required>
+    <br><br>
+
+    <!-- Second text input field where copied text will be shown -->
+    <input type="text" id="input2" placeholder="Same data">
+    <br><br>
+
+</body>
+
+</html>

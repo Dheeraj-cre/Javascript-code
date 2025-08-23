@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Object</title>
+    <script>
+        function student(roll, name, age) {
+            this.roll = roll;
+            this.name = name;
+            this.age = age;
+        }
+        // creating an object of student
+        var student1 = new student(101, "Dheeraj", 20);
+        // displaying the object
+        document.write("First student data --------<br")
+            // displaying the name
+        document.write("Name: " + student1.name + "<br>");
+        // displaying the roll number
+        document.write("Roll: " + student1.roll + "<br>");
+        // displaying the age
+        document.write("Age: " + student1.age + "<br>");
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
