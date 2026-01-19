@@ -1,42 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Character encoding -->
     <meta charset="UTF-8">
+
+    <!-- Makes the page responsive on mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo List </title>
+
+    <!-- Page title -->
+    <title>Todo List</title>
 </head>
 <body>
-    <div>
-        <h2>todolist</h2>
-    <input type="text" id="addTask" placeholder="write your task">
-    <button onclick="addTodo()" >Add</button>
 
-    <ol id="todolist"></ol>
+    <!-- Main container -->
+    <div>
+        <!-- Heading -->
+        <h2>Todo List</h2>
+
+        <!-- Input field to write a task -->
+        <!-- FIX: id should match JavaScript (todoInput) -->
+        <input type="text" id="todoInput" placeholder="Write your task">
+
+        <!-- Button to add task -->
+        <!-- onclick calls addTodo() function -->
+        <button onclick="addTodo()">Add</button>
+
+        <!-- Ordered list where tasks will be added -->
+        <!-- FIX: id should match JavaScript (todoList) -->
+        <ol id="todoList"></ol>
     </div>
 
     <script>
+        // Function to add a new todo item
         function addTodo() {
-  const input = document.getElementById("todoInput");
-  const task = input.value;
 
-  if (task === "") return;
+            // Get input element
+            const input = document.getElementById("todoInput");
 
-  const li = document.createElement("li");
-  li.textContent = task;
+            // Get value typed by user
+            const task = input.value;
 
-  const deleteBtn = document.createElement("button");
-  deleteBtn.textContent = "Delete";
+            // If input is empty, stop the function
+            if (task === "") return;
 
-  deleteBtn.onclick = function () {
-    li.remove();
-  };
+            // Create a new list item
+            const li = document.createElement("li");
 
-  li.appendChild(deleteBtn);
-  document.getElementById("todoList").appendChild(li);
+            // Add task text inside list item
+            li.textContent = task + " ";
 
-  input.value = "";
-}
+            // Create delete button
+            const deleteBtn = document.createElement("button");
 
+            // Button text
+            deleteBtn.textContent = "Delete";
+
+            // Delete task when button is clicked
+            deleteBtn.onclick = function () {
+                li.remove(); // removes the list item
+            };
+
+            // Add delete button inside list item
+            li.appendChild(deleteBtn);
+
+            // Add list item inside ordered list
+            document.getElementById("todoList").appendChild(li);
+
+            // Clear input field after adding task
+            input.value = "";
+        }
     </script>
+
 </body>
 </html>
