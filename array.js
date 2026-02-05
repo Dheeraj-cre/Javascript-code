@@ -78,6 +78,11 @@ console.log(shorted);
 
 
 
+let num = [12, 14, 13, 74, 19, 37, 29];
+
+for (let i = 0; i < num.length; i++) {
+    console.log(num[i]);
+}
 
 
 
